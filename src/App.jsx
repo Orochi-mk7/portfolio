@@ -1,4 +1,4 @@
-import Header from './components/header'
+import Header from './components/Header'
 import Hero from './components/Hero'
 import WavyBot from "./assets/wavy-dashed-bottom.svg"
 import WavyTop from "./assets/wavy-dashed-top.svg"
@@ -11,9 +11,7 @@ function App() {
   const skillsSection= useRef(null)
   const projectsSection= useRef(null)
   const contactSection= useRef(null)
-  const scrollToSection = (ref) => {
-    ref.current?.scrollIntoView({ behavior: "smooth" });
-  }
+
   return (
     <>
       <Header homeSection={homeSection} skillsSection={skillsSection} projectsSection={projectsSection} contactSection={contactSection}/>
