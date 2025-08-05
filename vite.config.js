@@ -6,9 +6,8 @@ import svgr from 'vite-plugin-svgr'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(),tailwindcss(),svgr()], 
-  build: {
-    rollupOptions: {
-      external: ['react-smooth'],  // mark as external to not bundle it
-    }}
+  optimizeDeps: {
+  include: ['react-smooth'],
+},
   
 })
