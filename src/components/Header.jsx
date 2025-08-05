@@ -2,7 +2,7 @@
  import ExitIcon from '../assets/close-icon.svg?react'
  import { useMediaQuery } from 'react-responsive'
  import { useState, useRef } from 'react'
- import Animate from 'react-smooth/src/Animate'
+import { motion, AnimatePresence  } from "framer-motion";
  //homeSection={homeSection} skillsSection={skillsSection} projectsSection={projectsSection} contactSection={contactSection}
  function Header(props) {
     const btnStle = "text-sm font-bold cursor-pointer hover:border-b border-white md:text-base w-full "
@@ -24,20 +24,32 @@
                     {
                         !isClicked ?
                         <BurgerIcon className="fill-white text-white w-full h-full" /> :
-                        <Animate to="1" from="0" attributeName="opacity" duration="1000">
+                         <motion.div
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ duration: 1 }}
+                        >
                             <ExitIcon className="fill-white text-white w-full h-full" />
-                        </Animate>    
+                          </motion.div>   
                     }</button>
+                <AnimatePresence>  
                 {isClicked && 
-                <Animate to="1" from="0" attributeName="opacity" duration="1000">
+                 <motion.ul
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 1 }}
+                        className='fixed top-12 left-0 w-full flex flex-col items-center bg-[#1A1136]'
+                >
                     <ul className='fixed top-12 left-0 w-full flex flex-col items-center bg-[#1A1136] '>
                         <li className={liStyle}><button onClick={()=>handleClick(props.homeSection)} className={btnStle}>HOME</button></li>
                         <li className={liStyle}><button onClick={()=>handleClick(props.skillsSection)} className={btnStle}>SKILLS</button></li>
                         <li className={liStyle}><button onClick={()=>handleClick(props.projectsSection)} className={btnStle}>PROJECTS</button></li>
                         <li className={liStyle}><button onClick={()=>handleClick(props.contactSection)} className={btnStle}>CONTACT</button></li>
                     </ul>
-                </Animate>
+                </motion.ul>
                 }
+                </AnimatePresence>  
             </nav>
             : 
             <nav className="gap-5  justify-center flex md:pr-5 md:gap-10">
