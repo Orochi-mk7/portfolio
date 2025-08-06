@@ -8,13 +8,10 @@ const Hero = forwardRef((props, ref) => {
         <main ref={ref} className="flex flex-col-reverse lg:flex-row text-center justify-center items-center px-3 lg:px-10 lg:h-[80vh] pb-5 overflow-hidden">
             <div className="flex flex-col items-center justify-center w-5/6">
                 <Welcome className ={style} />
-                <p className="text-white lg:text-xl">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                     Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-                      mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
-                       quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, 
-                       rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. 
-                       Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.                      
-                         leo eget bibendum sodales, augue velit cursus nunc,</p>
+                <p className="text-white lg:text-xl">A Frontend Web Developer and a Computer Engineering graduate with proven experience and knowledge in React.js, JavaScript, Tailwind CSS, 
+                    and working with AI and APIs. Focused on creating user-friendly, responsive web designs with an emphasis on performance, modern design 
+                    principles, and accessibility for all users. Native Arabic speaker, fluent in English, and a beginner in German.</p>
+                         
             </div>    
 
             <div className="w-5/6 flex items-center justify-center">
