@@ -9,6 +9,7 @@ const Skills = forwardRef((props,ref) => {
             ">My Skills</h2>
             <ul className="flex flex-wrap justify-center gap-3 sm:w-1/3">
                 <li className={liStyle}>React.js</li>
+                <li className={liStyle}>TypeScript</li>
                 <li className={liStyle}>Tailwind css</li>
                 <li className={liStyle}>Responsive Web Desgine</li>
                 <li className={liStyle}>REST Api</li>    
