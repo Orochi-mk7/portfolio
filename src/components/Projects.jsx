@@ -1,6 +1,7 @@
 import MoviesWatchlist from "../assets/movies-watchlist.png"
 import ChefHelper from "../assets/chef-helper.png"
 import Quizzical from "../assets/quizzical.png"
+import Tenzies from "../assets/tenzies.png"
 import {forwardRef} from 'react'
 const Projects = forwardRef((props,ref) => {
     return(
@@ -55,6 +56,21 @@ const Projects = forwardRef((props,ref) => {
                         </p>
                         <a className="bg-[#0A001B] text-white w-1/3 max-w-[150px] xl:max-w-[200px]
                          xl:py-3 py-2 rounded-md mt-5 cursor-pointer min-w-[120px]"href="https://movieswatchlistreact.netlify.app"
+                         target="_blank"><button >Visit</button></a>
+                    </div>
+                </li>
+
+                <li className="flex flex-col gap-7 md:flex-row items-center">
+                    <div className="shadow-xl border border-gray-200 max-w-[1000px] w-3/4 sm:min-w-[400px]">
+                        <img src={Tenzies}/>
+                    </div>    
+                    <div className="flex flex-col items-center xl:gap-5 w-2/4">
+                        <span className="text-xl font-bold pb-3 lg:text-2xl xl:text-3xl">Tenzies</span>
+                        <p className="text-gray-700 lg:text-xl">The Classic game of chance Tenzies, build using React.js and
+                            secured using Typescript, test your luck and see how fast can you get the perfect Tenzies game!
+                        </p>
+                        <a className="bg-[#0A001B] text-white w-1/3 max-w-[150px] xl:max-w-[200px]
+                         xl:py-3 py-2 rounded-md mt-5 cursor-pointer min-w-[120px]"href="https://tenziesmk.netlify.app"
                          target="_blank"><button >Visit</button></a>
                     </div>
                 </li>                   
