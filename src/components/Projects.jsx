@@ -17,7 +17,7 @@ const Projects = forwardRef((props,ref) => {
                     </div>    
                     <div className="flex flex-col items-center xl:gap-5 w-2/4">
                         <span className="text-xl font-bold pb-3 lg:text-2xl xl:text-3xl">Chef Helper</span>
-                        <p className="text-gray-700 lg:text-xl">Ai powered React app to help you find recipes with what ingredients you have,
+                        <p className="text-gray-700 lg:text-xl">Ai powered React app to help you find recipes with what ingredients you have, secured with Typescript and
                             uses REST api to get the Chef's reccomendations after the users inputs 4 or more ingredients, 
                             styled with Tailwind CSS and build with accessibility in mind
                         </p>
